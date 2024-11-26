@@ -1,0 +1,11 @@
+{
+  "name": "MBCG Delegate Representative",
+  "description": "DRep anchor metadata for MBCG.",
+  "url": "https://MBCG.io",
+  "logo": "https://raw.githubusercontent.com/edw00rd/MBCG/refs/heads/main/MBCG_LOGO.png",
+  "social": {
+    "reddit": "https://www.reddit.com/user/Mirai_MBCG_io/",
+    "youtube": "https://www.youtube.com/channel/UCF4w_vREANNCjbc7fklfa7Q",
+    "linkedin": "https://www.linkedin.com/company/mirai-blockchain-group"
+  }
+}
