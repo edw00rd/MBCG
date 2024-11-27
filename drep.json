@@ -1,13 +1,28 @@
 {
-  "61284": {
-    "name": "Mirai Blockchain Group (MBCG)",
+  "@context": "https://raw.githubusercontent.com/cardano-foundation/CIPs/main/CIP-0019/CIP-0019-schema.json",
+  "drep": {
+    "givenName": "Mirai Blockchain Group",
     "description": "Mirai Blockchain Group (MBCG) specializes in Cardano blockchain development and node management, offering services such as staking, wallet setup, and community engagement.",
-    "url": "https://MBCG.io",
-    "logo": "https://raw.githubusercontent.com/edw00rd/MBCG/refs/heads/main/MBCG_LOGO.png",
-    "social": {
-      "reddit": "https://www.reddit.com/user/Mirai_MBCG_io",
-      "linkedin": "https://www.linkedin.com/company/mirai-blockchain-group",
-      "youtube": "https://www.youtube.com/channel/UCF4w_vREANNCjbc7fklfa7Q"
-    }
+    "image": {
+      "url": "https://raw.githubusercontent.com/edw00rd/MBCG/refs/heads/main/MBCG_LOGO.png",
+      "sha256": "a45440d1f40d622f6994dfc79a8ef698789ef986b869cf30efd79e6cd40345a3"
+    },
+    "objectives": "To promote community-driven governance and enhance transparency in blockchain decision-making.",
+    "motivations": "To support the Cardano ecosystem by providing informed and community-focused representation.",
+    "qualifications": "Experienced in blockchain technology, governance, and community engagement.",
+    "references": [
+      {
+        "name": "Reddit",
+        "url": "https://www.reddit.com/user/Mirai_MBCG_io"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/company/mirai-blockchain-group"
+      },
+      {
+        "name": "YouTube",
+        "url": "https://www.youtube.com/channel/UCF4w_vREANNCjbc7fklfa7Q"
+      }
+    ]
   }
 }
