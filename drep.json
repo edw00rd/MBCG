@@ -1,27 +1,105 @@
 {
-  "@context": "https://raw.githubusercontent.com/cardano-foundation/CIPs/main/CIP-0019/CIP-0019-schema.json",
-  "drep": {
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP108": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0108/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP108:referenceHash",
+              "@context": {
+                "hashDigest": "CIP108:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:update-uri"
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "title": "CIP108:title",
+        "abstract": "CIP108:abstract",
+        "rationale": "CIP108:rationale"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "title": "Mirai Blockchain Group - DRep",
+    "abstract": "MIRAI Blockchain Group (MBCG) is a forward-thinking blockchain solutions provider committed to fostering innovation, transparency, and community empowerment in decentralized ecosystems. As a Delegated Representative (DRep) on the Cardano blockchain, MBCG seeks to leverage its expertise in blockchain technology and governance to contribute meaningfully to the Cardano ecosystem. By participating as a DRep, MBCG aims to amplify the voices of ADA holders, ensuring fair and informed representation in governance decisions. Our dedication to decentralization and community-driven progress aligns with Cardano’s mission to build a more inclusive and equitable financial infrastructure. We strive to enhance governance processes by promoting transparency, accountability, and engagement, while actively supporting initiatives that drive technological and community growth within the ecosystem. MBCG is excited to collaborate with stakeholders, innovators, and the broader Cardano community to shape the future of blockchain governance, setting a high standard for representation and contributing to Cardano's long-term success.",
+    "motivations": "Our motivation to bring governance to the blockchain stems from our belief in the power of decentralization to create fair, transparent, and inclusive systems. Traditional governance often lacks accountability and community representation, which blockchain technology can address by enabling equal participation and tamper-proof decision-making processes. By advancing blockchain governance, we aim to empower communities, foster trust, and contribute to building a more equitable and resilient future.",
+    "rationale": "We aim to bring governance to the blockchain to create transparent, inclusive, and decentralized decision-making systems that empower communities and build trust.",
+    "paymentAddress": "addr1qxj99reqt7szllwtq6eceupsadfgy2u6gm5wnvj8rn9qyvm7kmp2f0024tz2l7fhewjwvqfjhajztkfem367g8a8l9ps56qe3u",
     "givenName": "Mirai Blockchain Group",
-    "description": "Mirai Blockchain Group (MBCG) specializes in Cardano blockchain development and node management, offering services such as staking, wallet setup, and community engagement.",
     "image": {
-      "url": "https://raw.githubusercontent.com/edw00rd/MBCG/refs/heads/main/MBCG_LOGO.png",
+      "@type": "ImageObject",
+      "contentUrl": "https://raw.githubusercontent.com/edw00rd/MBCG/refs/heads/main/MBCG_LOGO.png",
       "sha256": "a45440d1f40d622f6994dfc79a8ef698789ef986b869cf30efd79e6cd40345a3"
     },
-    "objectives": "To promote community-driven governance and enhance transparency in blockchain decision-making.",
-    "motivations": "To support the Cardano ecosystem by providing informed and community-focused representation.",
-    "qualifications": "Experienced in blockchain technology, governance, and community engagement.",
+    "objectives": "Our objective is to empower communities through transparent and decentralized blockchain governance.",
+    "qualifications": "MIRAI Blockchain Group brings a wealth of experience and expertise to blockchain governance. Since Epoch 260, we have successfully operated a Cardano stake pool, demonstrating our technical proficiency and commitment to the network's decentralization. Our team boasts over three decades of combined experience in software development, ensuring a deep understanding of complex systems and innovative solutions. Additionally, with over three decades of experience in the financial markets and legal sectors, we offer a unique perspective that blends technical knowledge with strategic and regulatory insight, positioning us as a well-rounded and capable contributor to the Cardano ecosystem.",
     "references": [
       {
-        "name": "Reddit",
-        "url": "https://www.reddit.com/user/Mirai_MBCG_io"
+        "@type": "Other",
+        "label": "Home Page",
+        "uri": "https://MBCG.io"
       },
       {
-        "name": "LinkedIn",
-        "url": "https://www.linkedin.com/company/mirai-blockchain-group"
+        "@type": "Other",
+        "label": "YouTube",
+        "uri": "https://www.youtube.com/channel/UCF4w_vREANNCjbc7fklfa7Q"
       },
       {
-        "name": "YouTube",
-        "url": "https://www.youtube.com/channel/UCF4w_vREANNCjbc7fklfa7Q"
+        "@type": "Other",
+        "label": "LinkedIn",
+        "uri": "https://www.linkedin.com/company/mirai-blockchain-group"
+      },
+      {
+        "@type": "Other",
+        "label": "Reddit",
+        "uri": "https://www.reddit.com/user/Mirai_MBCG_io"
       }
     ]
   }
